@@ -60,7 +60,7 @@ http://127.0.0.1:8000/create_appointment/
 	"datetime":"2020-10-25 08:15", # in form of '%Y-%m-%d %H:%M'
 	"patient_first_name":"troy",
 	"patient_last_name":"barnes",
-	"kind":"follow_up"
+	"kind":"follow_up" # Must be 'new_patient' or 'follow_up'
 }
 ```
 
