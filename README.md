@@ -29,7 +29,7 @@ http://127.0.0.1:8000/get_appointments?
 -Query Params:
 
 	-doctor_uuid
-    	-date
+	-date
         	-should be in format "%Y-%m-%d"
 
 Example: http://127.0.0.1:8000/get_appointments?doctor_uuid=cf6f9403-e23d-4d3e-bafa-b05ddcc495c7&date=2020-10-26
@@ -41,6 +41,7 @@ http://127.0.0.1:8000/delete_appointment?
 -Delete an appointment with given appointment uuid
 
 -Query Params:
+
 	-appointment_uuid
 
 Example:
@@ -53,7 +54,6 @@ http://127.0.0.1:8000/create_appointment/
 -Schedule an appointment
 
 -Body example:
-
 ``{
 	"doctor_uuid":"cf6f9403-e23d-4d3e-bafa-b05ddcc495c7",
 	"datetime":"2020-10-25 08:15", # in form of '%Y-%m-%d %H:%M'
