@@ -37,19 +37,19 @@ POST
 http://127.0.0.1:8000/create_appointment/
 -Schedule an appointment
 -Body example:
-`{
+``{
 	"doctor_uuid":"cf6f9403-e23d-4d3e-bafa-b05ddcc495c7",
 	"datetime":"2020-10-25 08:15", # in form of '%Y-%m-%d %H:%M'
 	"patient_first_name":"troy",
 	"patient_last_name":"barnes",
 	"kind":"follow_up"
-}`
+}``
 
 POST 
 HTTP://127.0.0.1:800/create_doctor/
 -Create a doctor
 -Body example:
-`{
+``{
     "first_name":"Will",
     "last_name":"Smith"
-}`
+}``
