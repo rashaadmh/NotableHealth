@@ -16,10 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from doctor.views import get_doctors, get_appointment_for_doctor, delete_appointment, create_appointment, create_doctor
 from sample_model.views import test_view, test_view_with_body
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('testapi/', test_view),
-    path('testpost/', test_view_with_body)
+    path('get_doctors/', get_doctors),
+    path('get_appointments/', get_appointment_for_doctor),
+    path('delete_appointment/', delete_appointment),
+    path('create_appointment/', create_appointment),
+    path('create_doctor/', create_doctor)
 ]
